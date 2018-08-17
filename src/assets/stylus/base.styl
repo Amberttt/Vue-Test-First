@@ -1,0 +1,131 @@
+
+body
+  -moz-osx-font-smoothing: grayscale
+  -webkit-font-smoothing: antialiased
+  text-rendering: optimizeLegibility
+  font-family: PingFangSC-Regular
+  background: #f2f6f9
+  min-width: 990px
+
+html
+  box-sizing: border-box
+
+*,
+*:before,
+*:after
+  box-sizing: inherit;
+
+a:focus,
+a:active
+  outline: none
+
+a,
+a:focus,
+a:hover
+  cursor: pointer
+  color: inherit
+  text-decoration: none
+
+//vue router transition css
+.fade-enter-active,
+.fade-leave-active
+  transition: all .2s ease
+
+.fade-enter,
+.fade-leave-active
+  opacity: 0
+
+.svg-icon
+  width: 1em
+  height: 1em
+  vertical-align: -0.15em
+  fill: currentColor
+  overflow: hidden
+
+.el-table__header
+  height: 100px
+  line-height: 100px !important
+  font-size: 18px
+  color: #252732
+
+//.el-table td, .el-table th
+//  border-bottom: none!important
+.el-table td
+  height: 78px
+
+.el-table .cell
+  padding-left: 51px
+  padding-right: 0
+
+.el-table
+  border: none !important
+  border-color: none !important
+  &::before
+    height: 0 !important
+// 分页
+.block
+  height: 62px
+  position: relative
+  .el-pagination
+    position: absolute
+    left: 51px
+    top: 27px
+    padding: 0
+    margin-top: 0
+    .el-pager .number
+      &.active
+        border-color: #252732
+        background-color: #252732
+
+//查看详情
+.check-detail
+  width: 100px
+  height: 40px
+  background: #E6F4FE
+  border-radius: 10px
+  border-color: transparent
+  text-align: center
+  font-size: 14px
+  color: #21658E
+
+.router-link-active
+  color: #00BDD7 !important
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+  -webkit-appearance: none !important
+  margin: 0
+
+// 导航栏
+.nav
+  width: 100%
+  height: 78px
+  background: #fff
+  padding-left: 28px
+
+.el-menu--horizontal .el-menu-item
+  width: 112px
+  height: 78px
+  padding: 0
+  line-height: 78px
+  &:hover
+    border-bottom: 0 none
+  &.is-active
+    border-bottom: 5px solid #00BDD7
+  a
+    display: block
+    width: 100%
+    height: 78px
+    text-align: center
+    font-size: 18px
+    color: #252732
+    &.router-link-active, &.router-link-exact-link
+      color: #00BDD7
+
+// 去除默认填充色
+input:-webkit-autofill
+  -webkit-box-shadow: 0 0 0 1000px #404a62 inset
+  border: 0 none
+  color: rgb(255, 255, 255) !important
+
+
